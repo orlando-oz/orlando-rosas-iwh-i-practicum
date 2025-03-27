@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        title=`${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body
+        h1 Add New Movie
+        a(href='/') Return to the homepage
+        form(action='/update-cobj', method='POST')
+            input(type='text', name='name', value='')
+            input(type='text', name='director', value='')
+            input(type='text', name='release_year', value='')

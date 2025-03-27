@@ -6,7 +6,27 @@ body, * {
     padding: 0;
 }
 
-h1 {
+table {
+    margin: 1rem 0;
+}
+
+td {
+    padding : 0.25rem;
+}
+
+thead td {
+    background-color: rgb(31, 116, 207);
+    color: rgb(255,255,255);
+    text-align: center;
+}
+
+tbody td {
+    border : 1px solid rgba(0,0,0,0.4);
+}
+
+h1,
+a.link-update,
+table {
     margin: 1rem;
 }
 
@@ -26,7 +46,7 @@ h1 {
     box-shadow: 3px 2px 6px lightgrey;
 }
 
-.card__email {
+.card__detail {
     font-size: 1rem;
 }
 
