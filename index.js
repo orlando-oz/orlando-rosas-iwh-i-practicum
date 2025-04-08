@@ -47,6 +47,7 @@ app.get('/update-cobj', (req, res)=>{
 // * Code for Route 3 goes here
 app.post('/update-cobj', async (req, res) => {
     console.log(req.body);
+    res.send('received request');
     // const update_payload = {
     //     properties : {
     //         "name" : req.body.name,
@@ -54,6 +55,8 @@ app.post('/update-cobj', async (req, res) => {
     //         "release_year" : req.body.release_year
     //     }
     // };
+    // console.log('update_payload', update_payload);
+    // res.redirect('back');
 });
 /** 
 * * This is sample code to give you a reference for how you should structure your calls. 

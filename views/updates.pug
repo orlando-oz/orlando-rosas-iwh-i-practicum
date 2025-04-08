@@ -6,8 +6,17 @@ html
         link(rel="stylesheet", href="/css/style.css")
     body
         h1 Add New Movie
-        a(href='/') Return to the homepage
-        form(action='/update-cobj', method='POST')
-            input(type='text', name='name', value='')
-            input(type='text', name='director', value='')
-            input(type='text', name='release_year', value='')
+        a(href='/' class='nav-link') Return to the homepage
+        div(class='form-wrapper')
+            form(action='/update-cobj', method='POST')
+                div(class='input-wrapper')
+                    label(for='movie-name') Title
+                    input(type='text', name='name', id='movie-name' value='')
+                div(class='input-wrapper')
+                    label(for='movie-director') Director
+                    input(type='text', name='director', id='movie-director' value='')
+                div(class='input-wrapper')
+                    label(for='movie-release-year') Release Year
+                    input(type='text', name='release_year', id='Release Year' value='')
+                div(class='input-wrapper')
+                    input(type='submit' name='submit' value='Submit')
